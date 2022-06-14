@@ -1,0 +1,101 @@
+.background-gray {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(207, 190, 190);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pulse {
+    width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text {
+    margin-bottom: 55px;
+}
+
+h1 {
+    font-size: 30px;
+    font-style: initial;
+}
+
+.pulse-effect {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 25px;
+    animation-name: puls_effect;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.white {
+    background-color: white;
+    box-shadow: 0 0 0 0 white;
+}
+
+.red {
+    background-color: rgb(221, 109, 109);
+    box-shadow: 0 0 0 0 rgba(221, 109, 109, 1);
+}
+
+.pink {
+    background-color: pink;
+    box-shadow: 0 0 0 0 pink;
+}
+
+.orange {
+    background-color: rgb(245, 177, 50);
+    box-shadow: 0 0 0 0 rgb(255, 194, 63);
+}
+
+.blue {
+    background-color: rgb(80, 80, 241);
+    box-shadow: 0 0 0 0 rgba(80, 80, 241, 1);
+}
+
+.green {
+    background-color: rgb(42, 184, 153);
+    box-shadow: 0 0 0 0 rgba(42, 184, 153, 1);
+}
+
+.violet {
+    background-color: rgb(102, 39, 102);
+    box-shadow: 0 0 0 0 rgba(102, 39, 102, 1);
+}
+
+.black {
+    background-color: black;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+}
+
+@keyframes puls_effect {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 10px rgba(white, 0);
+        box-shadow: 0 0 0 10px rgba(221, 109, 109, 0);
+        box-shadow: 0 0 0 10px rgba(pink, 0);
+        box-shadow: 0 0 0 10px rgba(255, 194, 63, 0);
+        box-shadow: 0 0 0 10px rgba(80, 80, 241, 0);
+        box-shadow: 0 0 0 10px rgba(42, 184, 153, 0);
+        box-shadow: 0 0 0 10px rgba(102, 39, 102, 0);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+}

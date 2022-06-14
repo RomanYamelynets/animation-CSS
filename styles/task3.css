@@ -1,0 +1,90 @@
+.background-space {
+    background-image: url('../images/2.jpg');
+    z-index: 1;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.space {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateX(75deg);
+}
+
+.earth {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-image: url('../images/earth_PNG39.png');
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
+    transform: rotateX(-75deg);
+}
+
+.radius {
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    border: 4px solid rgb(117, 105, 105);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+
+.moon {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background-image: url('../images/moon2-png-44673.png');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    animation-name: run;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 7s;
+    transform: rotateZ(0deg) translate(300px) rotateX(90deg) rotateY(0deg);
+}
+
+@keyframes run {
+    0% {
+        transform: rotateZ(0deg) translate(300px) rotateX(90deg) rotateY(360deg);
+        box-shadow: inset 0 0 20px rgb(49, 47, 47);
+    }
+    25% {
+        box-shadow: inset 16px 0 8px rgb(49, 47, 47);
+    }
+    50% {
+        transform: rotateZ(149deg) translate(300px) rotateX(90deg) rotateY(205deg);
+        box-shadow: inset 40px -20px 16px rgb(49, 47, 47);
+    }
+    50.1% {
+        box-shadow: inset -40px -20px 16px rgb(49, 47, 47);
+    }
+    75% {
+        box-shadow: inset -16px 0 8px rgb(49, 47, 47);
+    }
+    100% {
+        transform: rotateZ(360deg) translate(300px) rotateX(90deg) rotateY(0deg);
+        box-shadow: inset 0 0 20px rgb(49, 47, 47);
+    }
+}
